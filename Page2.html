@@ -1,0 +1,137 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Package</title>
+    <style>
+        :root {
+            --background-color: #0b1a26;
+            --text-color: #e0f2f1;
+            --accent-color: #64b5f6;
+            --border-color: #263238;
+            --hover-color: #4fc3f7;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            box-sizing: border-box;
+            max-width: 800px;
+            margin: auto;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        img {
+            max-width: 100%; /* Makes the image responsive to the page width */
+            height: auto;
+            border-radius: 8px;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            color: var(--accent-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-weight: 300;
+            font-family: 'Georgia', serif;
+        }
+        p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .choice {
+            margin-top: 30px;
+        }
+        .choice ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .choice li {
+            background-color: var(--border-color);
+            padding: 15px 25px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .choice li:hover {
+            background-color: #37474f;
+            transform: translateY(-3px);
+        }
+        .choice a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+            display: block;
+        }
+        .choice a:hover {
+            color: var(--hover-color);
+            text-decoration: underline;
+        }
+        footer {
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+        footer a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer a:hover {
+            color: var(--hover-color);
+            text-decoration: underline;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+            .choice a {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>The Package</h1>
+    <p>You decide to open the box immediately. Inside, you find a futuristic-looking device and a small note: "Don't trust the interviewer."</p>
+    <p>You're a tech enthusiast, so you recognize the device as a pre-release Umbrella Corps personal cloaking device.</p>
+    <figure>
+     <img src="device.jpg" alt="Mysterious Device." /img src>
+     <figcaption>
+    Pexels <a href="https://www.pexels.com/photo/photo-of-person-holding-a-black-key-5474291/">Photo of Person Holding a Black Key</a> by <a href="https://www.pexels.com/@cottonbro/">cottonbro studio</a>. License: Creative Commons.
+    </figcaption>
+</figure>  
+    <div class="choice">
+
+        <p>What do you do?</p>
+        <ul>
+            <li><a href="Page4.html">A) Activate the device and use it to sneak into the building.</a></li>
+            <li><a href="Page5.html">B) Bring the device with you and confront the interviewer.</a></li>
+        </ul>
+    </div>
+    
+    <footer>
+        <a href="Page1.html">Back to Home</a>
+    </footer>
+</body>
+</html>
