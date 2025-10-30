@@ -1,0 +1,107 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The End</title>
+    <style>
+        :root {
+            --background-color: #0b1a26;
+            --text-color: #e0f2f1;
+            --accent-color: #64b5f6;
+            --border-color: #263238;
+            --hover-color: #4fc3f7;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            box-sizing: border-box;
+            max-width: 800px;
+            margin: auto;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            color: var(--accent-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-weight: 300;
+            font-family: 'Georgia', serif;
+        }
+        p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .end-message {
+            font-style: italic;
+            color: var(--accent-color);
+            margin-top: 30px;
+            font-size: 1.2rem;
+        }
+        footer {
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+        footer a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer a:hover {
+            color: var(--hover-color);
+            text-decoration: underline;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>The End</h1>
+
+    <p>While you rest a security detail from Umbrella Corp breaks into your home. You are taken and never heard from again.</p>
+
+<figure>
+     <img src="police.jpg" alt="Police" /img src>
+     <figcaption>
+    Pexels <a href="https://www.pexels.com/photo/crime-scene-do-not-cross-signage-923681/">Crime Scene Do Not Cross Signage</a> by <a href="https://www.pexels.com/@kat-wilcox-329096/">kat wilcox</a>. License: Creative Commons.
+    </figcaption>
+</figure>   
+
+    <div class="end-message">
+        <strong>The End</strong>
+
+    </div>
+ 
+    <footer>
+        <a href="Page1.html">Back to Home</a>
+    </footer>
+</body>
+</html>
